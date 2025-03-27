@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Contenedor del header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos del header */
+header {
+    background: black;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilos del menú */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Sección Hero (Texto + Imagen) */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.hero-content .text {
+    flex: 1;
+}
+
+.hero-content .image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-content .image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Secciones generales */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Habilidades */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-container span {
+    background: #222;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* 📱 Estilos responsivos */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content .image {
+        text-align: center;
+        margin-top: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
